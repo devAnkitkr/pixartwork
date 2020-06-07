@@ -10,4 +10,65 @@
   font-size: smaller;
   margin: 0 0.5em;
 }
+
+.navbar .navbar-brand {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.fontawesome-icon {
+  position: absolute;
+  color: grey;
+  left: 10px;
+  top: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-brand {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 16px !important;
+  }
+  .user-status {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    padding: 8px 0px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .fontawesome-icon {
+    position: absolute;
+    color: grey;
+    left: 6px;
+    top: 8px;
+  }
+  .navbar-brand {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 15px !important;
+  }
+}
 /*# sourceMappingURL=navbar.styles.css.map */

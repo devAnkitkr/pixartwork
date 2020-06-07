@@ -7,10 +7,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 1em;
 }
 
 .search-form .search-input {
   width: 400px;
+  height: 37px;
   padding: 0.2em 1em 0.2em 2em;
   outline: none;
   border: none;
@@ -33,15 +35,37 @@
   background: grey;
 }
 
+.profile-image {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: "cover";
+     object-fit: "cover";
+}
+
 @media only screen and (max-width: 600px) {
+  .search-form {
+    margin: 0;
+  }
   .search-form .search-input {
-    width: 200px;
+    width: auto;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .search-form {
+    margin: 0;
+  }
   .search-form .search-input {
-    width: 150px;
+    width: auto;
+    height: 30px;
+    font-size: smaller;
+    margin: 0 3px;
+  }
+  .profile-image {
+    width: 25px;
+    height: 25px;
+    -o-object-fit: "cover";
+       object-fit: "cover";
   }
 }
 /*# sourceMappingURL=search-field.styles.css.map */

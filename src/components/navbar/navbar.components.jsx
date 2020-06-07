@@ -23,8 +23,8 @@ const Navbar = ({ currentUser }) => {
   }, [currentUser]);
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-      <h4 className="navbar-brand text-primary" style={{flexGrow:'2'}}>
-        <a href="/">Pixartwork</a>
+      <h4 className="navbar-brand text-primary m-0 p-0">
+        <a href="/" className='small-logo'>Pixartwork</a>
       </h4>
       <SearchField />
       <button
@@ -35,6 +35,7 @@ const Navbar = ({ currentUser }) => {
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style={{order:'3'}}
       >
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -93,18 +94,17 @@ const Navbar = ({ currentUser }) => {
           )}
         </ul>
       </div>
-      <ul className="user-status">
+      <div className="user-status m-0">
         <li>
           <NavLink to="/account" className="tags" activeStyle={activeStyle}>
             <img
               src={profilePic}
               alt="profilepicture"
-              className="rounded-circle"
-              style={{ width: "40px", height: "40px", objectFit: "cover" }}
+              className="rounded-circle profile-image m-0 p-0"
             />
           </NavLink>
         </li>
-      </ul>
+      </div>
     </nav>
   );
 };

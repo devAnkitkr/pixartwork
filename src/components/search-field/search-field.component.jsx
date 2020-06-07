@@ -7,10 +7,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./search-field.styles.scss";
 
 const fontstyle = {
-  position: "absolute",
-  color: "grey",
-  left: "10px",
-  top: "12px",
+ 
 };
 
 const SearchField = ({ history }) => {
@@ -47,9 +44,8 @@ const SearchField = ({ history }) => {
         return history.push(`/search/${str}`);
       }}
     >
-      {" "}
       <div>
-        <FontAwesomeIcon icon={faSearch} style={fontstyle} />
+        <FontAwesomeIcon icon={faSearch} className='fontawesome-icon' style={fontstyle} />
         <input
           type="search"
           className="search-input"
