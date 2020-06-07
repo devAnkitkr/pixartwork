@@ -36,10 +36,9 @@ const ProfileCard = ({ profileDetail }) => {
         <img src={userProfile.profilePic} alt="profile-pic" />
       </div>
       <div className="profile-detail">
-        <h2>{userProfile.name}</h2>
+        <h2 className='p-0 m-0 mt-2'>{userProfile.name}</h2>
         <small>{userProfile.email}</small>
         <br></br>
-        <h4>Bio</h4>
         <p>{userProfile.bio}</p>
       </div>
     </div>

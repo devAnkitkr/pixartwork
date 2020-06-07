@@ -1,5 +1,15 @@
+.home-masonry{
+    margin: 2em 4em;
+    padding-top: 1em;
+}
 .profileUrl{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    .home-masonry{
+        margin:0.2em;
+    }
 }

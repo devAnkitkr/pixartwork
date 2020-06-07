@@ -34,4 +34,13 @@
 .profile-card .profile-detail {
   text-align: left;
 }
+
+@media only screen and (max-width: 600px) {
+  .profile-card {
+    padding: 0;
+  }
+  .profile-card .profile-pic {
+    margin-right: 0em;
+  }
+}
 /*# sourceMappingURL=profile-card.styles.css.map */

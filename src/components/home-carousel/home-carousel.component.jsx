@@ -14,25 +14,13 @@ const HomeCarousel = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img
-              src={ocean}
-              style={{ width: "100%", maxHeight: "600px", objectFit: "cover" }}
-              alt="First slide"
-            />
+            <img src={ocean} className="carousel-img" alt="First slide" />
           </div>
           <div className="carousel-item">
-            <img
-              src={forest}
-              style={{ width: "100%", maxHeight: "600px", objectFit: "cover" }}
-              alt="Second slide"
-            />
+            <img src={forest} className="carousel-img" alt="Second slide" />
           </div>
           <div className="carousel-item">
-            <img
-              src={cloud}
-              style={{ width: "100%", maxHeight: "600px", objectFit: "cover" }}
-              alt="Third slide"
-            />
+            <img src={cloud} className="carousel-img" alt="Third slide" />
           </div>
         </div>
       </div>

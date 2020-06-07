@@ -1,3 +1,7 @@
+.user-masonry {
+  margin: 2em 4em;
+}
+
 .frame-body {
   position: absolute;
   top: 0;
@@ -12,6 +16,7 @@
 .frame-body:hover {
   background-color: rgba(0, 0, 0, 0.178);
   opacity: 1;
+  display: block;
 }
 
 .frame-body .frame-title {
@@ -64,5 +69,15 @@
   border-radius: 5px;
   padding: 0.1em 0.5em;
   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .user-masonry {
+    margin: 0em;
+    padding: 0;
+  }
+  .frame-body {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=user-masonry.styles.css.map */

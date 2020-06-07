@@ -1,3 +1,8 @@
+.home-masonry {
+  margin: 2em 4em;
+  padding-top: 1em;
+}
+
 .profileUrl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,5 +13,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-masonry {
+    margin: 0.2em;
+  }
 }
 /*# sourceMappingURL=home-masonry.styles.css.map */

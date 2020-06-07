@@ -49,6 +49,9 @@
   .search-form .search-input {
     width: auto;
   }
+  .search-form .suggestion-list {
+    width: 170px;
+  }
 }
 
 @media only screen and (max-width: 400px) {

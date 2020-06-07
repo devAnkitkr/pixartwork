@@ -18,7 +18,7 @@ const UserMasonry = ({
   setDialogMsg,
   history,
 }) => {
-  console.log('userData',currentUser)
+  console.log("userData", currentUser);
   const [delWarning, setDelWarning] = useState(false);
   useEffect(() => {}, [setDialogMsg]);
 
@@ -44,56 +44,60 @@ const UserMasonry = ({
     });
   };
   return (
-    <div className="card-columns p-4 m-4">
-      <DialogBox />
-      {userData.map((img, id) => (
-        <div
-          className="card border-0"
-          style={{ position: "relative" }}
-          key={id + 11110}
-        >
-          <img
-            src={img.thumbURL.width !== 0 ? img.thumbURL : img.imgUrl}
-            className="card-img-top"
-            alt="user collection"
-            width="50"
-          />
-          <div className="frame-body" onClick={handleClick} id={id}>
-            <span className="frame-title m-1">{img.title}</span>
-            <div className="frame-user">
-              <div className="tags-container">
-                <ul className="ul-tags">
-                  {img.tags &&
-                    img.tags.map((tag, id) => (
-                      <li className="li-tag mr-2" key={id + 2220}>
-                        {tag}
-                      </li>
-                    ))}
-                </ul>
+    <main className="user-masonry">
+      <div className="card-columns">
+        <DialogBox />
+        {userData.map((img, id) => (
+          <div
+            className="card border-0"
+            style={{ position: "relative" }}
+            key={id + 11110}
+          >
+            <img
+              src={img.thumbURL.width !== 0 ? img.thumbURL : img.imgUrl}
+              className="card-img-top"
+              alt="user collection"
+              width="50"
+            />
+            <div className="frame-body" onClick={handleClick} id={id}>
+              <span className="frame-title m-1">{img.title}</span>
+              <div className="frame-user">
+                <div className="tags-container">
+                  <ul className="ul-tags">
+                    {img.tags &&
+                      img.tags.map((tag, id) => (
+                        <li className="li-tag mr-2" key={id + 2220}>
+                          {tag}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
               </div>
+              {currentUser && currentUser.uid === profileDetail.uid && (
+                <RemoveButton handleRemove={() => setDelWarning(true)} />
+              )}
+              {delWarning && (
+                <div className="frame-body d-flex flex-column justify-content-center align-items-center">
+                  <p>Are you sure you want to delete this image?</p>
+                  <button
+                    className="custom-button"
+                    onClick={() => handleRemove(img.imgUrl, img.ThumbURL)}
+                  >
+                    Yes
+                  </button>
+                  <button
+                    className="custom-button"
+                    onClick={() => setDelWarning(false)}
+                  >
+                    No
+                  </button>
+                </div>
+              )}
             </div>
-            {currentUser && currentUser.uid === profileDetail.uid && <RemoveButton handleRemove={() => setDelWarning(true)} />}
-            {delWarning && (
-              <div className="frame-body d-flex flex-column justify-content-center align-items-center">
-                <p>Are you sure you want to delete this image?</p>
-                <button
-                  className="custom-button"
-                  onClick={() => handleRemove(img.imgUrl, img.ThumbURL)}
-                >
-                  Yes
-                </button>
-                <button
-                  className="custom-button"
-                  onClick={() => setDelWarning(false)}
-                >
-                  No
-                </button>
-              </div>
-            )}
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </main>
   );
 };
 const mapStateToProps = (state) => ({
