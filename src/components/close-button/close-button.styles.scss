@@ -1,0 +1,10 @@
+.close-button {
+    color: grey;
+    position: absolute;
+    top: 0.8em;
+    right: 1em;
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }

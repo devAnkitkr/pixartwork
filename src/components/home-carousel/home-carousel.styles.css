@@ -1,0 +1,25 @@
+.home-carousel {
+  max-width: 100%;
+  max-height: 600px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.carousel-hero-text {
+  position: absolute;
+}
+
+.carousel-hero-text h3 {
+  font-size: x-large;
+  font-weight: 900;
+}
+/*# sourceMappingURL=home-carousel.styles.css.map */

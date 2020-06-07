@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,gBAAgB,EAAE,OAAe,CAAC,UAAU;CAC7C",
+    "sources": [
+        "loading-skeleton.styles.scss"
+    ],
+    "names": [],
+    "file": "loading-skeleton.styles.css"
+}

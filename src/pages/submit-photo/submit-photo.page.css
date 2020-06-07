@@ -1,0 +1,46 @@
+.submit-photo-page {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(169, 169, 169, 0.753);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit-photo-page .submit-container {
+  width: 88%;
+  height: 600px;
+  -webkit-box-shadow: darkgrey;
+          box-shadow: darkgrey;
+  background-color: white;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.submit-photo-page .submit-container .submit-header {
+  color: darkgray;
+}
+
+.submit-photo-page .submit-container .submit-footer {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=submit-photo.page.css.map */

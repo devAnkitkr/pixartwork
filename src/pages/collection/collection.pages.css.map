@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,OAAO,EAAE,KAAK;EACd,MAAM,EAAC,KAAK;EACZ,aAAa,EAAE,eAAe;CACjC",
+    "sources": [
+        "collection.pages.scss"
+    ],
+    "names": [],
+    "file": "collection.pages.css"
+}

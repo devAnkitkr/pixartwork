@@ -1,0 +1,55 @@
+.frame-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 200ms;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.178);
+    opacity: 1;
+  }
+
+  .frame-title {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    padding: 0.2em;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+  .frame-user {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    padding: 0em 0em;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profile-pic {
+      display: block;
+    }
+    .tags-container {
+        margin: 0;
+        padding: 0;
+      .ul-tags {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        .li-tag {
+          display: inline;
+          margin: 0.3em;
+          background-color: rgba(255, 140, 0, 0.363);
+          border-radius: 5px;
+          padding: 0.1em 0.5em;
+        //   line-height: 2em;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

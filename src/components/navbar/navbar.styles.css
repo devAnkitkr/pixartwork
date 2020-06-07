@@ -1,0 +1,13 @@
+.user-status {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.user-status li {
+  display: inline-block;
+  font-size: smaller;
+  margin: 0 0.5em;
+}
+/*# sourceMappingURL=navbar.styles.css.map */

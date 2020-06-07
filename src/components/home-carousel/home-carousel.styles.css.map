@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,QAAQ;CACrB;;AACD,AAAA,mBAAmB,CAAA;EACf,QAAQ,EAAE,QAAQ;CAKrB;;AAND,AAEI,mBAFe,CAEf,EAAE,CAAA;EACE,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "home-carousel.styles.scss"
+    ],
+    "names": [],
+    "file": "home-carousel.styles.css"
+}

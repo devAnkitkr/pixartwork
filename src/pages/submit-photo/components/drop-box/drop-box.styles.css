@@ -1,0 +1,75 @@
+.upload-gallery {
+  background-color: darkgrey;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+
+.upload-gallery:hover {
+  background-color: #838282;
+}
+
+.drop-box {
+  min-height: 80%;
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
+  border: 4px dashed darkgray;
+  cursor: pointer;
+}
+
+.drop-box .drop-image-logo {
+  opacity: 0.5;
+}
+
+.drop-box #custom-button {
+  width: 100px;
+  margin: 10px;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+}
+
+.drop-box #custom-button #custom-input {
+  width: 100px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+.drop-box #custom-button:hover {
+  background: black;
+  color: white;
+}
+
+.drop-box:hover {
+  background-color: gray;
+  border: 4px dashed darkgray;
+}
+
+.drop-box:hover .drop-image-logo {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=drop-box.styles.css.map */

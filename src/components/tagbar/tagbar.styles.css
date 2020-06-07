@@ -1,0 +1,27 @@
+.tag-bar {
+  width: 100%;
+  min-height: 40px;
+  background-color: #3a3030;
+  border-top: 1px solid #2c2323;
+}
+
+.tag-bar .tags-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-bar .tags-ul .tags {
+  display: inline-block;
+  height: 40px;
+  margin: 0 1em;
+  line-height: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.tag-bar .tags-ul .tags:hover {
+  border-bottom: 2px solid #e9c54f;
+  color: #e9c54f;
+}
+/*# sourceMappingURL=tagbar.styles.css.map */

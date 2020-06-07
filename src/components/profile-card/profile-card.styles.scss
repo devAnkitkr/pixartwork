@@ -1,0 +1,24 @@
+.profile-card {
+  min-width: 50vw;
+  height: auto;
+  padding: 2em;
+  margin:0 auto;
+  background-color: #3a3030;
+  display: flex;
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5em;
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 0.3em 1em;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .profile-detail {
+    text-align: left;
+  }
+}

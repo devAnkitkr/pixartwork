@@ -1,0 +1,58 @@
+.join-page {
+  background-color: white;
+  background: url("../../assets/nightsky.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.join-page .section-one {
+  background: url("../../assets//cup-of-lights.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 3em;
+}
+
+.join-hero-title {
+  font-weight: bolder;
+  color: white;
+  width: 100px;
+  text-align: left;
+}
+
+.join-hero-caption {
+  color: white;
+  width: 300px;
+  text-align: left;
+}
+
+.section-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+/*# sourceMappingURL=join.page.css.map */

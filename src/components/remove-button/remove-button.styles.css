@@ -1,0 +1,12 @@
+.close-button {
+  color: #d8d8d8;
+  position: absolute;
+  top: 0.8em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: white;
+}
+/*# sourceMappingURL=remove-button.styles.css.map */

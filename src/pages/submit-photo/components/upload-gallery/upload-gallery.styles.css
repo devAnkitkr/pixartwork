@@ -1,0 +1,27 @@
+.remove-button {
+  color: white !important;
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  opacity: 0.8;
+}
+
+.remove-button:hover {
+  opacity: 0.6;
+}
+
+.input-title {
+  width: 250px;
+  padding: 0.2em 0.5em;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.input-title:focus {
+  outline: none;
+}
+
+.body-card {
+  padding: 5px;
+}
+/*# sourceMappingURL=upload-gallery.styles.css.map */

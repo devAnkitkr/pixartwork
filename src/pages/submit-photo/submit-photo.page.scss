@@ -1,0 +1,30 @@
+.submit-photo-page {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(169, 169, 169, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .submit-container {
+    width: 88%;
+    height: 600px;
+    box-shadow: darkgrey;
+    background-color: white;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    .submit-header {
+      color: darkgray;
+    }
+ 
+  
+    .submit-footer {
+      padding: 15px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

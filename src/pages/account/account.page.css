@@ -1,0 +1,40 @@
+.account-page {
+  position: absolute;
+  background-color: rgba(41, 40, 40, 0.534);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-page input[type="file"] {
+  display: none;
+}
+
+.account-page .card-img-container {
+  position: relative;
+}
+
+.account-page .card-img-container .custom-file-upload {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.account-page .card-img-container .custom-file-upload:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=account.page.css.map */

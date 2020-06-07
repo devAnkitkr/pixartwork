@@ -1,0 +1,19 @@
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  label {
+    display: block;
+    width: 100%;
+  }
+  input {
+    display: block;
+    width: 100%;
+  }
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  button {
+    margin: 1em 0;
+  }
+}

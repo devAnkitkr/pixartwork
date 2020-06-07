@@ -1,0 +1,56 @@
+.tags-input {
+  width: 250px;
+  min-height: 50px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+}
+
+.tags-input .ul-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags-input .ul-tags .li-tag {
+  margin: 0.3em;
+  background-color: darkorange;
+  border-radius: 10px;
+  padding: 0.3em 0.5em;
+  line-height: 1.5em;
+}
+
+.tags-input .ul-tags .li-tag .tag-close-icon {
+  margin-left: 0.4em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tags-input input {
+  min-width: 20px;
+  border: none;
+  padding-left: 10px !important;
+}
+
+.tags-input input:focus {
+  outline: transparent;
+}
+/*# sourceMappingURL=tags-input.styles.css.map */
