@@ -3,6 +3,7 @@ import { db } from "../../firebase/firebase";
 import { connect } from "react-redux";
 import DialogBox from "../dialog-box/dialog-box.component";
 import { setDialogMsg } from "../../redux/dialog-msg/dialog-msg.action";
+import CustomButton from '../custom-button/custom-button.component'
 
 import "./edit-profile-form.styles.scss";
 
@@ -46,7 +47,7 @@ const EditProfileForm = ({ currentUser, setDialogMsg }) => {
           placeholder="max letter 300"
           onChange={handleChange}
         />
-        <button type="submit">Done</button>
+        <CustomButton label='Update' />
       </form>
     </div>
   );

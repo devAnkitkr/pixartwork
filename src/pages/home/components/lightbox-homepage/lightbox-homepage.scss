@@ -14,6 +14,7 @@
   .lb-container {
     position: relative;
     text-align: center;
+  
     .lb-profile {
       color: black;
       position: absolute;
@@ -38,5 +39,11 @@
       border-radius: 5px;
      
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .lightbox{
+    padding: 0;
   }
 }

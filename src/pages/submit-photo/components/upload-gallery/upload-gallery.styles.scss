@@ -20,3 +20,10 @@
 .body-card{
   padding:5px;
 }
+
+@media only screen and (max-width: 600px) {
+ 
+ .input-title{
+   width: 245px;
+ }
+}

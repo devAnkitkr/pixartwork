@@ -51,4 +51,10 @@
   border: none;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .lightbox {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=lightbox-homepage.css.map */

@@ -48,6 +48,11 @@
   }
 }
 
+.profile-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media only screen and (max-width: 400px) {
   .navbar {
     padding: 8px 0px !important;

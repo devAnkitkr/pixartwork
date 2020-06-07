@@ -36,6 +36,10 @@
   }
 }
 
+.profile-image{
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 400px) {
   .navbar {
     padding: 8px 0px !important;
@@ -51,6 +55,5 @@
   .navbar-brand {
     flex-grow: 1;
     font-size: 15px !important;
-
   } 
 }

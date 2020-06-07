@@ -18,7 +18,7 @@ const UploadGallery = ({ src, id, addImageTitle, removeImage }) => {
         width="100"
         alt="upload-content"
         className="card-img-top"
-        style={{ width: "260px", height: "250px", objectFit: "cover" }}
+        style={{ width: "253px", height: "250px", objectFit: "cover" }}
       />
       <div className="body-card">
         <input
@@ -26,7 +26,7 @@ const UploadGallery = ({ src, id, addImageTitle, removeImage }) => {
           type="text"
           placeholder="Add Title"
           name="title"
-          onChange={(e) => addImageTitle(id, e.target.value)}
+          onChange={(e) => addImageTitle(id, e.target.value.toLowerCase())}
         />
         <TagsInput id={id} />
       </div>
