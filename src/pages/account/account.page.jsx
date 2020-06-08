@@ -3,30 +3,30 @@ import { connect } from "react-redux";
 import accountPng from "../../assets/account.png";
 import addButton from "../../assets/addbutton.svg";
 import { uploadProfilePicture } from "../../firebase/firebase";
-import CustomButton from '../../components/custom-button/custom-button.component'
-
-import "./account.page.scss";
-
+import CustomButton from "../../components/custom-button/custom-button.component";
 import CloseButton from "../../components/close-button/close-button.component";
 import fileValidation from "../submit-photo/components/image-validation";
 import EditProfileForm from "../../components/edit-profile-form/edit-profile-form.component";
 
+import "./account.page.scss";
+
 const AccountPage = ({ currentUser }) => {
-  const [profilePic, setProfile] = useState(accountPng);
+  const [profilePic, setProfilePic] = useState(accountPng);
   const [editProfile, setEditProfile] = useState(false);
 
   useEffect(() => {
     if (currentUser) {
       if (currentUser.profilePic !== "") {
-        setProfile(currentUser.profilePic);
+        setProfilePic(currentUser.profilePic);
       }
     }
   }, [currentUser]);
 
+  console.log("profilePic", currentUser.profilePic);
+
   const handleChange = (event) => {
     const { files } = event.target;
     const { uid } = currentUser;
-    console.log(files[0]);
     if (fileValidation(files[0])) {
       const reader = new FileReader();
       reader.readAsDataURL(files[0]);
@@ -36,15 +36,15 @@ const AccountPage = ({ currentUser }) => {
           files[0].name,
           uid
         );
-        if (status === "success")
-          alert("successfully uploaded your profile picture");
-        window.location.reload();
+        if (status === "success") {
+          setProfilePic(reader.result);
+        }
       };
     }
   };
-  const handleClick=()=>{
-    setEditProfile(!editProfile)
-  }
+  const handleClick = () => {
+    setEditProfile(!editProfile);
+  };
   return (
     <div className="account-page">
       <div className="card bg-dark">
@@ -66,7 +66,7 @@ const AccountPage = ({ currentUser }) => {
           <p className="card-text">
             <small className="text-muted">{currentUser.email}</small>
           </p>
-          <CustomButton handleClick={handleClick} label='Edit profile' />
+          <CustomButton handleClick={handleClick} label="Edit profile" />
           {editProfile && <EditProfileForm />}
         </div>
       </div>
@@ -76,4 +76,5 @@ const AccountPage = ({ currentUser }) => {
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,
 });
+
 export default connect(mapStateToProps)(AccountPage);

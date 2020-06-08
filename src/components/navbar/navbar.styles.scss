@@ -9,14 +9,14 @@
     margin: 0 0.5em;
   }
 }
-.navbar{
-  .navbar-brand{
+.navbar {
+  .navbar-brand {
     flex-grow: 2;
   }
 }
-.fontawesome-icon{
+.fontawesome-icon {
   position: absolute;
-  color:grey;
+  color: grey;
   left: 10px;
   top: 12px;
 }
@@ -31,12 +31,12 @@
     flex-grow: 1;
     font-size: 16px !important;
   }
-  .user-status{
+  .user-status {
     order: 1 !important;
   }
 }
 
-.profile-image{
+.profile-image {
   object-fit: cover;
 }
 
@@ -46,14 +46,14 @@
     display: flex;
     justify-content: space-between;
   }
-  .fontawesome-icon{
+  .fontawesome-icon {
     position: absolute;
-    color:grey;
+    color: grey;
     left: 6px;
     top: 8px;
   }
   .navbar-brand {
     flex-grow: 1;
     font-size: 15px !important;
-  } 
+  }
 }
