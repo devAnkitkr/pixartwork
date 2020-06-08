@@ -46,7 +46,7 @@ const App = ({ currentUser,setCurrentUser }) => {
         <Route path="/profile/:uid" render={() => <CollectionPage />} />
         <Route path="/login" render={() => currentUser !== null ? <Redirect to ='/' /> : <LoginPage />} />
         <Route path="/join" render={() => currentUser !== null ? <Redirect to ='/' /> : <JoinPage />} />
-        <Route path ='/account' render ={()=> currentUser === null ? <Redirect to ='/login' /> : <AccountPage />} /> 
+        <Route path ="/account" render ={()=> currentUser === null ? <Redirect to ='/login' /> : <AccountPage />} /> 
         <Route path="/search/:searchId" render={() => <SearchPage />} />    
         <Route path="/" component={HomePage} />
       </Switch>
