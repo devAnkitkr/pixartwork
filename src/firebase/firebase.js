@@ -31,10 +31,9 @@ export const createUserProfileDoc = (uid, email, name) => {
       profileUrl: uid,
     })
     .then(() => {
-      alert("successfully created user db");
       return userRef;
     })
-    .catch((error) => alert("error creating user db", error));
+    .catch(() => alert("Please try again later!"));
 };
 
 export const getUserProfileDoc = (uid) => {

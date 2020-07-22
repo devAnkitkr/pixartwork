@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { auth } from "../../firebase/firebase";
 import SearchField from "../search-field/search-field.component";
 import accountPng from "../../assets/account.png";
+import pixartLogo from '../../assets/pixartwork logo.svg'
 
 import "./navbar.styles.scss";
 
@@ -24,7 +25,7 @@ const Navbar = ({ currentUser }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <h4 className="navbar-brand text-primary m-0">
-        <a href="/" className='small-logo'>Pixartwork</a>
+        <a href="/" className='small-logo'><img src={pixartLogo} height="60px" /></a>
       </h4>
       <SearchField />
       <button
