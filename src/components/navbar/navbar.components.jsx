@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { auth } from "../../firebase/firebase";
 import SearchField from "../search-field/search-field.component";
 import accountPng from "../../assets/account.png";
-import pixartLogo from '../../assets/pixartwork logo.svg'
+import pixartLogo from "../../assets/pixartwork logo.svg";
 
 import "./navbar.styles.scss";
 
@@ -25,7 +25,9 @@ const Navbar = ({ currentUser }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <h4 className="navbar-brand text-primary m-0">
-        <a href="/" className='small-logo'><img src={pixartLogo} height="60px" /></a>
+        <a href="/">
+          <img className="small-logo" src={pixartLogo} height="60px" width="90px"/>
+        </a>
       </h4>
       <SearchField />
       <button
@@ -36,7 +38,7 @@ const Navbar = ({ currentUser }) => {
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        style={{order:'3'}}
+        style={{ order: "3" }}
       >
         <span className="navbar-toggler-icon"></span>
       </button>
